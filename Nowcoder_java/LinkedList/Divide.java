@@ -2,7 +2,8 @@ package LinkedList;
 
 import java.util.*;
 
-import algorithmTest.ListNode;
+import LinkedList.ListNode;
+import LinkedList.ClearValue;
 
 public class Divide {
     public static ListNode listDivide(ListNode head, int val) {
@@ -73,7 +74,7 @@ public class Divide {
     	}
     	System.out.println("请输入要比较的值：");
     	int val = scanner.nextInt();
-    	ListNode answer = Divide.listDivide(head,val);
+    	ListNode answer = ClearValue.clear(head,val);
     	while(answer != null){
     		System.out.println(answer.val);
     		answer = answer.next;
